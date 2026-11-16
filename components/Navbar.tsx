@@ -23,7 +23,7 @@ export default function Navbar({ currentSlide, onSelectSlide }: NavbarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-3 transition-all duration-300">
       <div className="max-w-7xl mx-auto cyber-glass rounded-2xl px-5 py-3 flex items-center justify-between shadow-2xl border border-cyan-500/20">
-        
+
         {/* Brand */}
         <button onClick={() => onSelectSlide(0)} className="flex items-center gap-3 group text-left">
           <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-cyan-400/50 p-0.5 group-hover:glow-cyan transition-all duration-300">
@@ -52,11 +52,10 @@ export default function Navbar({ currentSlide, onSelectSlide }: NavbarProps) {
               <button
                 key={item.label}
                 onClick={() => onSelectSlide(item.index)}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 flex items-center gap-2 ${
-                  isActive
-                    ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-300 border border-cyan-500/30 glow-cyan"
-                    : "text-slate-400 hover:text-white hover:bg-white/5"
-                }`}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 flex items-center gap-2 ${isActive
+                  ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-300 border border-cyan-500/30 glow-cyan"
+                  : "text-slate-400 hover:text-white hover:bg-white/5"
+                  }`}
               >
                 <Icon className={`w-3.5 h-3.5 ${isActive ? "text-cyan-400" : ""}`} />
                 {item.label}
@@ -93,11 +92,10 @@ export default function Navbar({ currentSlide, onSelectSlide }: NavbarProps) {
             <button
               key={item.label}
               onClick={() => onSelectSlide(item.index)}
-              className={`whitespace-nowrap px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-all ${
-                isActive
-                  ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/30"
-                  : "bg-black/40 text-slate-400 border border-white/5"
-              }`}
+              className={`whitespace-nowrap px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-all ${isActive
+                ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/30"
+                : "bg-black/40 text-slate-400 border border-white/5"
+                }`}
             >
               {item.label}
             </button>
