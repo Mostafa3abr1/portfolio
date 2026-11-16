@@ -159,7 +159,7 @@ export default function Hero({ onExploreProjects, onTryPlayground }: HeroProps) 
           {/* Exact Portrait Container */}
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-cyan-400 p-1 glow-cyan-lg bg-[#070d1e] shadow-2xl z-10 group">
             <Image
-              src="/mostafa-aber.jpg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/mostafa-aber.jpg`}
               alt={PERSONAL_INFO.displayName}
               width={320}
               height={320}

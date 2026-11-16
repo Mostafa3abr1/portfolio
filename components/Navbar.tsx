@@ -28,7 +28,7 @@ export default function Navbar({ currentSlide, onSelectSlide }: NavbarProps) {
         <button onClick={() => onSelectSlide(0)} className="flex items-center gap-3 group text-left">
           <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-cyan-400/50 p-0.5 group-hover:glow-cyan transition-all duration-300">
             <Image
-              src="/mostafa-aber.jpg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/mostafa-aber.jpg`}
               alt={PERSONAL_INFO.displayName}
               width={40}
               height={40}
@@ -68,7 +68,7 @@ export default function Navbar({ currentSlide, onSelectSlide }: NavbarProps) {
         {/* Action Buttons */}
         <div className="flex items-center gap-3">
           <a
-            href="/cv.pdf"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cv.pdf`}
             download="Mostafa_Aber_CV.pdf"
             className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 transition-all duration-300"
           >

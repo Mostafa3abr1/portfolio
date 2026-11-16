@@ -2,6 +2,7 @@
   "name": "mostafa-aber-ai-portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://Mostafa3abr1.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

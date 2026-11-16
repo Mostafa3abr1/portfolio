@@ -180,7 +180,7 @@ export default function ContactModal() {
                 <Send className="w-3.5 h-3.5" /> Send Direct Message
               </button>
               <a
-                href="/cv.pdf"
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cv.pdf`}
                 download="Mostafa_Aber_CV.pdf"
                 className="px-5 py-3 rounded-xl cyber-glass border border-cyan-500/30 text-cyan-300 text-xs font-semibold hover:bg-cyan-500/10 transition-all flex items-center gap-2"
               >

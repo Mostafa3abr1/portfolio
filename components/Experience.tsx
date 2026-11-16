@@ -99,7 +99,7 @@ export default function Experience() {
               <div className="text-xs text-slate-400 mt-0.5">Mostafa_Aber_CV.pdf (2 Pages)</div>
             </div>
             <a
-              href="/cv.pdf"
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cv.pdf`}
               download="Mostafa_Aber_CV.pdf"
               className="px-4 py-2.5 rounded-xl bg-cyan-400 text-black font-bold text-xs hover:bg-cyan-300 transition-all flex items-center gap-1.5"
             >
